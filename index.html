@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Premium developer and designer portfolio. Explore creative web design and full-stack engineering work.">
+  <title>Alex Carter | Creative Developer & Designer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Decorative Glowing Blobs -->
+  <div class="blob blob-purple"></div>
+  <div class="blob blob-pink"></div>
+  <div class="blob blob-blue"></div>
+
+  <!-- Header Section -->
+  <header id="header">
+    <div class="container">
+      <a href="#" class="logo">AC.DEV</a>
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div style="display: flex; gap: 1rem; align-items: center;">
+        <a href="#contact" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.9rem;">Hire Me</a>
+        <button class="menu-btn" id="menu-toggle" aria-label="Toggle Navigation Menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="container">
+      <div class="hero-text">
+        <h1 class="hero-title">Crafting Digital <br><span class="gradient-text">Experiences</span> That Matter</h1>
+        <p>I'm a passionate full-stack developer and UI/UX designer specialized in building fast, scalable, and stunningly beautiful web applications.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            View My Work
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <div class="hero-image-glow"></div>
+        <div class="hero-image">
+          <!-- Abstract Developer Graphic Symbol -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+            <line x1="14" y1="4" x2="10" y2="20"></line>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="card-glass" style="height: 100%; display: flex; justify-content: center; align-items: center; min-height: 300px;">
+          <!-- SVG Illustration indicating design & code intersection -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-purple); opacity: 0.85;">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            <path d="M2 12h20"></path>
+          </svg>
+        </div>
+        <div class="about-info">
+          <h3>Bridging the Gap Between Code and Creative Design</h3>
+          <p>I build web solutions that not only perform seamlessly under the hood but also capture attention through modern, high-fidelity visual design. With a focus on performance, accessibility, and intuitive interactions, I deliver websites that drive success.</p>
+          <p>Over the last 5+ years, I have worked with early-stage startups and established brands alike to design and deploy digital products that align with strategic goals.</p>
+          
+          <div class="about-stats">
+            <div class="stat-item">
+              <div class="stat-num" id="stat-experience">5+</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num" id="stat-projects">40+</div>
+              <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num" id="stat-clients">25+</div>
+              <div class="stat-label">Happy Clients</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">My Skills</h2>
+      <div class="skills-grid">
+        <!-- Frontend Development Card -->
+        <div class="card-glass skill-category">
+          <h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+            Frontend
+          </h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-name-row">
+                <span>HTML5 / CSS3 / Vanilla JS</span>
+                <span>95%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" style="width: 95%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name-row">
+                <span>React / Next.js</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" style="width: 90%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name-row">
+                <span>TypeScript</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend Development Card -->
+        <div class="card-glass skill-category">
+          <h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+            Backend & DevOps
+          </h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-name-row">
+                <span>Node.js / Express</span>
+                <span>88%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" style="width: 88%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name-row">
+                <span>PostgreSQL / MongoDB</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" style="width: 80%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name-row">
+                <span>REST APIs / GraphQL</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" style="width: 90%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design & Tools Card -->
+        <div class="card-glass skill-category">
+          <h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 14.7255 3.09032 17.1962 4.85857 19C5.01445 19.1559 5.05928 19.3908 4.96548 19.593C4.87168 19.7952 4.67262 19.9231 4.45 19.9231C3.12 19.9231 2 18.8031 2 17.4731C2 16.4731 2.65 15.6131 3.56 15.2831C3.86 15.1731 4.19 15.3531 4.29 15.6631C4.39 15.9731 4.21 16.3031 3.9 16.4031C3.39 16.5931 3 17.0231 3 17.4731C3 18.2531 3.67 18.9231 4.45 18.9231H4.55C4.7 18.9231 4.84 18.8231 4.89 18.6831C4.94 18.5431 4.91 18.3831 4.8 18.2731C3.34 16.7831 2.5 14.8031 2.5 12.7231C2.5 7.64315 6.64 3.50315 11.72 3.50315C16.8 3.50315 20.94 7.64315 20.94 12.7231C20.94 17.8031 16.8 21.9431 11.72 21.9431C11.5 21.9431 11.28 21.9231 11.07 21.8731C10.76 21.8031 10.57 21.4931 10.64 21.1831C10.71 20.8731 11.02 20.6831 11.33 20.7531C11.46 20.7831 11.59 20.7931 11.72 20.7931C16.16 20.7931 19.79 17.1631 19.79 12.7231C19.79 8.28315 16.16 4.65315 11.72 4.65315C7.28 4.65315 3.65 8.28315 3.65 12.7231C3.65 14.4131 4.19 16.0331 5.2 17.3731L5.27 17.4731L5.2 17.3731C5.2 17.3731 5.2 17.3731 5.2 17.3731Z" fill="currentColor"/></svg>
+            Design & Tools
+          </h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-name-row">
+                <span>Figma UI/UX</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" style="width: 90%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name-row">
+                <span>Git / GitHub</span>
+                <span>92%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" style="width: 92%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name-row">
+                <span>Responsive & Adaptive Layouts</span>
+                <span>96%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" style="width: 96%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio/Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      
+      <!-- Portfolio Filters -->
+      <div class="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Dev</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+        <!-- Project 1 (Web Dev) -->
+        <div class="card-glass project-card" data-category="web">
+          <div class="project-img">
+            <!-- Icon/Visual for E-Commerce -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+          </div>
+          <div class="project-details">
+            <div class="project-tags">
+              <span class="project-tag">Next.js</span>
+              <span class="project-tag">Stripe</span>
+            </div>
+            <h4>Veloce Commerce</h4>
+            <p>A headless e-commerce store featuring lightning-fast page transition times, sub-second search, and secure multi-currency payments.</p>
+            <a href="#" class="project-link">
+              View Case Study
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2 (Web Dev) -->
+        <div class="card-glass project-card" data-category="web">
+          <div class="project-img">
+            <!-- Icon/Visual for SaaS Dashboard -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="20" x2="18" y2="10"></line>
+              <line x1="12" y1="20" x2="12" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="14"></line>
+            </svg>
+          </div>
+          <div class="project-details">
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">Chart.js</span>
+            </div>
+            <h4>Apex Metrics</h4>
+            <p>Real-time analytics dashboard designed for enterprise business planning. Equipped with custom interactive charting frameworks.</p>
+            <a href="#" class="project-link">
+              View Case Study
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3 (Design) -->
+        <div class="card-glass project-card" data-category="design">
+          <div class="project-img">
+            <!-- Icon/Visual for Mobile UI Design -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+              <line x1="12" y1="18" x2="12.01" y2="18"></line>
+            </svg>
+          </div>
+          <div class="project-details">
+            <div class="project-tags">
+              <span class="project-tag">Figma</span>
+              <span class="project-tag">UI/UX</span>
+            </div>
+            <h4>Aura Finance App</h4>
+            <p>Complete product design and interactive prototypes for a modern mobile micro-investing and wealth tracking system.</p>
+            <a href="#" class="project-link">
+              View Case Study
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-grid">
+        
+        <!-- Contact Information -->
+        <div class="contact-info">
+          <h3>Let's collaborate on something awesome</h3>
+          <p>Whether you're looking to build a new web application from scratch, optimize your design systems, or just want to say hi—drop me a message!</p>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="contact-text">
+                <h5>Email Me</h5>
+                <p>alex@ac-dev.io</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div class="contact-text">
+                <h5>Location</h5>
+                <p>San Francisco, CA (Open to Remote)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="card-glass">
+          <form class="contact-form" id="portfolio-form" action="#" method="POST">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Hi Alex, I'd love to chat about a new project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="justify-content: center; width: 100%;">Send Message</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Toast Notification -->
+  <div class="toast-notification" id="toast">
+    <div class="toast-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+    </div>
+    <div class="toast-content">
+      <span style="font-weight: 600; display: block; font-size: 0.9rem;">Message Sent!</span>
+      <span style="color: var(--text-muted); font-size: 0.8rem;">I will get back to you shortly.</span>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container footer-content">
+      <div class="social-links">
+        <a href="#" class="social-link" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+        </a>
+        <a href="#" class="social-link" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        </a>
+        <a href="#" class="social-link" aria-label="Twitter">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+        </a>
+      </div>
+      <p>&copy; 2026 Alex Carter. All rights reserved. Created with Antigravity.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
