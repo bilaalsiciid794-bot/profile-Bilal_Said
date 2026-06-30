@@ -58,7 +58,38 @@ document.addEventListener('DOMContentLoaded', () => {
     skillsObserver.observe(skillSection);
   }
 
-  // 4. Portfolio Filters
+  // 4. Services Fade-in Animation
+  const services = document.querySelectorAll('.service-card');
+  if (services.length > 0) {
+    const serviceObserverOptions = {
+      root: null,
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const serviceObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          // Delay each card slightly to create a stagger effect
+          setTimeout(() => {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }, index * 100);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, serviceObserver);
+
+    services.forEach(service => {
+      // Set initial state
+      service.style.opacity = '0';
+      service.style.transform = 'translateY(30px)';
+      service.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      serviceObserver.observe(service);
+    });
+  }
+
+  // 5. Portfolio Filters
   const filterBtns = document.querySelectorAll('.filter-btn');
   const projectCards = document.querySelectorAll('.project-card');
 
@@ -89,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 5. Contact Form Submission Handling
+  // 6. Contact Form Submission Handling
   const contactForm = document.getElementById('portfolio-form');
   const toast = document.getElementById('toast');
 
