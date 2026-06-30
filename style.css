@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
 
 :root {
-  /* Color Palette - Blue Accents Dark Theme */
-  --bg-primary: #050a15;
-  --bg-secondary: #0a1226;
-  --bg-glass: rgba(10, 18, 38, 0.65);
+  /* Color Palette - Navy Blue, White & Golden Orange Theme */
+  --bg-primary: #030816;       /* Deep Navy Blue */
+  --bg-secondary: #08122c;     /* Dark Navy Blue */
+  --bg-glass: rgba(8, 18, 44, 0.7);
   --border-glass: rgba(255, 255, 255, 0.08);
-  --accent-cyan: #00e5ff;
-  --accent-blue: #0088ff;
-  --accent-indigo: #6366f1;
-  --text-main: #f8fafc;
-  --text-muted: #94a3b8;
+  
+  /* Accents */
+  --accent-cyan: #ff9f1c;      /* Main Golden Orange */
+  --accent-blue: #e65c00;      /* Deep Amber Orange */
+  --accent-indigo: #ffbf69;    /* Light Gold */
+  
+  /* Text */
+  --text-main: #ffffff;        /* Pure White */
+  --text-muted: #cbd5e1;       /* Soft White / Slate */
   --text-dark: #64748b;
   
   /* Fonts */
@@ -260,14 +264,14 @@ nav a:hover::after {
 
 .btn-primary {
   background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
-  color: #050a15;
+  color: var(--bg-primary);
   border: none;
-  box-shadow: 0 4px 20px rgba(0, 229, 255, 0.2);
+  box-shadow: 0 4px 20px rgba(255, 159, 28, 0.25);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 24px rgba(0, 229, 255, 0.45);
+  box-shadow: 0 6px 24px rgba(255, 159, 28, 0.45);
 }
 
 .btn-secondary {
@@ -462,9 +466,9 @@ nav a:hover::after {
 
 .service-card:hover .service-icon-box {
   background: var(--accent-cyan);
-  color: #050a15;
+  color: var(--bg-primary);
   transform: scale(1.08);
-  box-shadow: 0 0 15px rgba(0, 229, 255, 0.3);
+  box-shadow: 0 0 15px rgba(255, 159, 28, 0.35);
 }
 
 .service-card h3 {
@@ -554,7 +558,7 @@ nav a:hover::after {
 
 .filter-btn:hover, .filter-btn.active {
   background: var(--accent-cyan);
-  color: #050a15;
+  color: var(--bg-primary);
   border-color: var(--accent-cyan);
 }
 
@@ -572,7 +576,7 @@ nav a:hover::after {
 .project-img {
   width: 100%;
   height: 220px;
-  background: linear-gradient(135deg, #0f2042, #060e1d);
+  background: linear-gradient(135deg, var(--bg-secondary), var(--bg-primary));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -787,7 +791,7 @@ footer {
 .social-link:hover {
   background: var(--accent-cyan);
   border-color: var(--accent-cyan);
-  color: #050a15;
+  color: var(--bg-primary);
   transform: translateY(-3px);
 }
 
